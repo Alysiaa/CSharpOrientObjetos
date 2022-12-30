@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ByteBank
 {
-    internal class ContaCorrente
+    public class ContaCorrente
     {
+       public int num_agencia;
+       public string conta;
+       public string titular;
+       public double saldo;
     }
 }
