@@ -48,3 +48,21 @@ ContadoAndre.Transferir(50, ContadaMaria);
 
 Console.WriteLine("Saldo do André: R$ "+ContadoAndre.saldo);
 Console.WriteLine("Saldo da Maria: R$ " + ContadaMaria.saldo);
+
+ContaCorrente ContadoPedro = new ContaCorrente();
+
+ContadoPedro.titular = "Pedro";
+
+Console.WriteLine(ContadoPedro.titular);
+Console.WriteLine(ContadoPedro.saldo);
+Console.WriteLine(ContadoPedro.num_agencia);
+Console.WriteLine(ContadoPedro.conta);
+
+/* valores padrão:
+ * para TIPOS NUMÉRICOS o valor padrão é 0
+ * para STRING o valor padrão é Nulo
+ * para BOOLEANO o valor padrão é False
+ */
+
+
+
