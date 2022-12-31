@@ -10,8 +10,10 @@ namespace ByteBank
     {
         public int num_agencia;
         public string conta;
-        public string titular;
         public double saldo=100;
+
+        //Relacionando as Classes Conta Corrente com Cliente
+        public Cliente titular;
 
         public void Depositar(double valor)
         {

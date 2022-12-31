@@ -1,6 +1,6 @@
 ﻿ using ByteBank;
 
-ContaCorrente ContadoAndre = new ContaCorrente();
+/*ContaCorrente ContadoAndre = new ContaCorrente();
 
 ContadoAndre.titular = "André Silva";
 ContadoAndre.num_agencia = 15;
@@ -23,7 +23,7 @@ ContadoAndre = ContadoAndre2;
 Console.WriteLine(ContadoAndre==ContadoAndre2);
 */
 
-//depositando R$100 na conta do André
+/*//depositando R$100 na conta do André
 ContadoAndre.Depositar(100);
 Console.WriteLine("Saldo da conta do André pós depósito: R$ " + ContadoAndre.saldo);
 
@@ -77,6 +77,24 @@ Console.WriteLine(ContadoPedro.conta);
  * para STRING o valor padrão é Nulo
  * para BOOLEANO o valor padrão é False
  */
+
+Cliente cliente = new Cliente();
+cliente.nome = "André Silva";
+cliente.cpf = "1235465484";
+cliente.profissao = "Analista";
+
+ContaCorrente conta = new ContaCorrente();
+conta.titular = cliente;
+conta.conta = "1010-X";
+conta.num_agencia = 15;
+conta.saldo = 100;
+
+Console.WriteLine("Titular: "+ conta.titular.nome);
+Console.WriteLine("CPF: " + conta.titular.cpf);
+Console.WriteLine("Profissão: " + conta.titular.profissao);
+Console.WriteLine("Nº Conta: " + conta.conta);
+Console.WriteLine("Nº Agência: " + conta.num_agencia);
+Console.WriteLine("Saldo: " + conta.saldo);
 
 
 
