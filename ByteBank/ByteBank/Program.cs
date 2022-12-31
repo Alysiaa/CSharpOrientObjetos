@@ -1,4 +1,4 @@
-﻿using ByteBank;
+﻿ using ByteBank;
 
 ContaCorrente ContadoAndre = new ContaCorrente();
 
@@ -8,6 +8,20 @@ ContadoAndre.conta = "1010-X";
 ContadoAndre.saldo = 100;
 
 Console.WriteLine("Saldo da conta do André: R$ " + ContadoAndre.saldo);
+
+/* Valores de referência: compara o endereço da memória, não os valores das variáveis
+ContaCorrente ContadoAndre2 = new ContaCorrente();
+
+ContadoAndre2.titular = "André Silva";
+ContadoAndre2.num_agencia = 15;
+ContadoAndre2.conta = "1010-X";
+ContadoAndre2.saldo = 100;
+
+Console.WriteLine("Saldo da conta do André: R$ " + ContadoAndre2.saldo);
+
+ContadoAndre = ContadoAndre2;
+Console.WriteLine(ContadoAndre==ContadoAndre2);
+*/
 
 //depositando R$100 na conta do André
 ContadoAndre.Depositar(100);
@@ -63,6 +77,9 @@ Console.WriteLine(ContadoPedro.conta);
  * para STRING o valor padrão é Nulo
  * para BOOLEANO o valor padrão é False
  */
+
+
+
 
 
 
