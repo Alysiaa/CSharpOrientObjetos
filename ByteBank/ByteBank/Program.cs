@@ -1,4 +1,5 @@
-﻿ using ByteBank;
+﻿using ByteBank.Contas;
+using ByteBank.Titular;
 
 /*ContaCorrente ContadoAndre = new ContaCorrente();
 
@@ -96,8 +97,14 @@ Console.WriteLine("Nº Conta: " + conta.conta);
 Console.WriteLine("Nº Agência: " + conta.num_agencia);
 Console.WriteLine("Saldo: " + conta.saldo);
 
+//criando nova conta corrente e novo cliente, em ambas as classes
+ContaCorrente conta2 = new ContaCorrente();
+conta2.titular = new Cliente();
+conta2.titular.nome = "José Silva";
+conta2.titular.profissao = "Tester";
+conta2.titular.cpf = "12345678911";
+conta2.conta = "9999-x";
+conta2.num_agencia = 18;
+conta2.saldo = 500;
 
-
-
-
-
+Console.WriteLine(conta2.titular.nome);
