@@ -11,7 +11,7 @@ namespace ByteBank.Contas
     {
         public int num_agencia;
         public string conta;
-        public double saldo = 100;
+        private double saldo = 100;
 
         //Relacionando as Classes Conta Corrente com Cliente
         public Cliente titular;
